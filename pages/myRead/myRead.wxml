@@ -1,0 +1,21 @@
+<!--pages/myRead/myRead.wxml-->
+<template name="myRead">
+  <view class='lists' wx:for='{{readList}}' wx:key='*readList'>
+    <navigator url='../readDetail/readDetail?id={{item.NewsID}}'>
+      <view class='list'>
+        <image src='{{item.NewsPic}}' class='list_img'></image>
+        <view class='list_con'>{{item.NewsTitle}}</view>
+        <view class='list_bottom'>
+          <image src='/image/eye.png' class='list_eye'></image>
+          <text>{{item.NewsHits}}</text>
+          <view class='display_inb list_cv' catchtap="collectCut" data-index="{{index}}" data-id="{{item.NewsID}}">
+              <image src="{{item.IsFav ? '/image/collecting.png':'/image/collect.png'}}" class='list_collect'></image>
+            </view>
+          <view class='list_day'>{{item.strPostDate}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</template>
+
+<template is="myRead" data="{{readList}}" />

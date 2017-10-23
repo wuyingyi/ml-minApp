@@ -1,0 +1,38 @@
+<import src="../../module/banner/banner.wxml" />
+<import src="../../module/filtrate/filtrate.wxml" />
+<import src="../myRead/myRead.wxml" />
+
+<view class="top">
+  <template is="Banner" data="{{imgUrls}}"></template>
+</view>
+
+<!-- <view class='search_top'>
+  <navigator url="" class="searchs">
+    <icon type="search" size="14" class="serIcon"></icon>
+    <text>课程收索</text>
+  </navigator>
+</view> -->
+
+<view class='search_top'>
+  <input class='searchs' placeholder='课程搜索' bindinput='searchList'></input>
+</view>
+
+<view class='sort'>
+  <template is="Filtrate" data="{{list}}"></template>
+</view>
+
+<template is="myRead" data="{{readList}}" />
+
+<!-- <view class='lists' wx:for='{{readList}}' wx:key='*readList'>
+  <navigator url='../readDetail/readDetail?id={{item.NewsID}}'>
+    <view class='list'>
+      <image src='{{item.NewsPic}}' class='list_img'></image>
+      <view class='list_con'>{{item.NewsTitle}}</view>
+      <view class='list_bottom'>
+        <image src='/image/eye.png' class='list_eye'></image>
+        <text>{{item.Price}}</text>
+        <view class='list_day'>15天前</view>
+      </view>
+    </view>
+  </navigator>
+</view> -->

@@ -1,0 +1,9 @@
+ <template name="Banner"> 
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="500" circular="true" indicator-dots="true" mode="scaleToFill">
+    <block wx:for="{{imgUrls}}" wx:key='*imgUrls'>
+      <swiper-item>
+        <image src="{{item.imageurl}}" class="slide-image" bindtap='navToUrl' data-url='{{item.linkurl}}' width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+ </template> 

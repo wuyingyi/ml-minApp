@@ -1,0 +1,37 @@
+<!--pages/mine/mine.wxml-->
+<view class='top flex'>
+  <image class='avatar' src='{{userInfo.headimgurl}}'></image>
+  <view class='nameWrapper flex'>
+    <text class='name'>{{userInfo.nickname}}</text>
+    <button class='identBtn' open-type="getPhoneNumber" bindgetphonenumber="doIdent">
+      <image class='ident' src='{{userInfo.isValidate ? "/image/ident.png" : "/image/unident.png"}}'></image>
+    </button>
+  </view>
+</view>
+
+<view class='list-wrapper'>
+
+  <view class='list flex' bindtap='navtoList' data-path="myFav">
+    <view>
+      <image class='icon' src='/image/mine1.png'></image>
+      <text class='text'>我的收藏</text>
+    </view>
+    <image class='arowR' src='/image/arowR.png'></image>
+  </view>
+
+  <button class='list flex button_contact' open-type='contact'>
+    <view>
+      <image class='icon' src='/image/mine2.png'></image>
+      <text class='text'>在线客服</text>
+    </view>
+    <image class='arowR' src='/image/arowR.png'></image>
+  </button>
+
+  <view class='list flex' wx:for='{{list}}' wx:key='*list' bindtap='navtoList' data-path="{{item.path}}">
+    <view>
+      <image class='icon' src='/image/mine{{index + 3}}.png'></image>
+      <text class='text'>{{item.title}}</text>
+    </view>
+    <image class='arowR' src='/image/arowR.png'></image>
+  </view>
+</view>

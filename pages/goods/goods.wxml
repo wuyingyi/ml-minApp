@@ -1,0 +1,60 @@
+<import src="../../module/banner/banner.wxml" />
+<import src="../../module/filtrate/filtrate.wxml" />
+<import src="../myGoods/myGoods.wxml" />
+
+<view class="top">
+  <template is="Banner" data="{{imgUrls}}"></template>
+</view>
+<view>
+  <!-- <view class='search_top'>
+    <navigator url="" class="searchs">
+      <icon type="search" size="14" class="serIcon"></icon>
+      <text>搜索采购</text>
+    </navigator>
+  </view> -->
+
+  <view class='search_top'>
+    <input class='searchs' placeholder='课程搜索' bindinput='searchList'></input>
+  </view>
+
+  <view class='sort'>
+    <template is="Filtrate" data="{{list}}"></template>
+  </view>
+
+  <template is="myGoods" data="{{goodList}}" />
+
+  <!-- <view class='content' wx:for='{{goodList}}' wx:key='*goodList'>
+
+    <navigator url='../goodsDetail/goodsDetail?id={{item.ProductID}}'>
+      <view class='lists display_inb'>
+        <image class='list_img fl' src='{{item.ProductPic}}'></image>
+        <view class='list_content fr'>
+          <view class=' list_head'>{{item.ProductTitle}}</view>
+          <view class='list_details display_inb'>{{item.ProductBrief}}</view>
+          <view class='list_price '>
+            <view class='display_inb price'>￥{{item.Price}}起</view>
+            <view class='display_inb list_cv  fr' catchtap="collectCut" data-index="{{index}}" data-id="{{item.ProductID}}">
+              <image src="{{item.collect ? '/image/collecting.png':'/image/collect.png'}}" class='list_collect'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+  </view> -->
+
+  <!-- <view class='content'>
+      <view class='lists display_inb'>
+        <image class='list_img fl' src='../../image/1.jpg'></image>
+        <view class='list_content fr'>
+          <view class=' list_head '>标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题题标题标题标题标题标题标题</view>
+          <view class='list_details display_inb'>详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情</view>
+          <view class='list_price '>
+            <view class='display_inb price'>￥2800起</view>
+            <image src='../../image/collecting.png' class='list_collect fr'></image>
+          </view>
+        </view>
+      </view>
+    </view> -->
+
+</view>

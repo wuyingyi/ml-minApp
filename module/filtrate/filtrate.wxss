@@ -1,0 +1,12 @@
+.sort{height: 64rpx;line-height: 60rpx; border-bottom:2rpx solid  #ebe6e4; display: flex; color: #CDC5BF;}
+.sort_c{flex: 1;color: #333333;font-size: 24rpx;text-align: center;position: relative;border-right: 1rpx solid #ebe6e4;}
+.sort_img{height: 15rpx;width:30rpx;} 
+.serSortListItL{border-top: 1rpx #ebe6e4 solid; }
+/* .serSortColor{color: red;} */
+.serSortListItemAct{ background: #f4f4f4; color: #09bb07; line-height: 20rpx;}
+.serSort_border{border-top: 1rpx solid #ebe6e4;}
+.serSortListItR_ok{ line-height: 28rpx;padding-top: 12rpx;}
+.fl{float: left;}
+.fr{float: right;}
+.dis_block{display: inline-block;}
+view :last-child{border-right: none;}

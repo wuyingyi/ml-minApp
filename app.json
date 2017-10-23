@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/read/read",
+    "pages/course/course",
+    "pages/goods/goods",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goodsDetail/goodsDetail",
+    "pages/courseDetail/courseDetail",
+    "pages/readDetail/readDetail",
+    "pages/myFav/myFav",
+    "pages/myRead/myRead",
+    "pages/myCourse/myCourse",
+    "pages/myGoods/myGoods"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a6a194",
+    "selectedColor": "#333333",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "阅读",
+        "iconPath": "image/read.png",
+        "selectedIconPath": "image/read_light.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程",
+        "iconPath": "image/course.png",
+        "selectedIconPath": "image/course_light.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "物品",
+        "iconPath": "image/goods.png",
+        "selectedIconPath": "image/goods_light.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine_light.png"
+      }
+    ]
+  }
+}

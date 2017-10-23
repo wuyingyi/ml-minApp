@@ -1,0 +1,51 @@
+/* pages/myFav/myFav.wxss */
+@import '../myRead/myRead.wxss';
+@import '../myCourse/myCourse.wxss';
+@import '../myGoods/myGoods.wxss';
+
+.tabbar {
+  display: flex;
+  width: 100%;
+  height: 88rpx;
+}
+
+.tlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+.tlist .text {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.tlist.active {
+  border-bottom: 8rpx solid #ebe6e4;
+}
+
+.tlist.active .text {
+  color: #bbb6ac;
+}
+
+/* 样式调整  */
+
+.read .list_img {
+  width: 100%;
+  height: 315rpx;
+}
+
+.read .list_collect {
+  margin-top: 0;
+}
+
+.course .list_details {
+  height: 80rpx;
+}
+
+.course .list_collect {
+  margin-top: -6rpx;
+}

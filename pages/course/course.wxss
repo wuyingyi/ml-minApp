@@ -1,0 +1,36 @@
+.top{width: 100%;height: 320rpx;}
+.search_top{height: 90rpx;background: #ebe6e4;position: relative;}
+.searchs{height: 50rpx;width: 500rpx;background: #fff;border-radius: 5rpx;position: absolute;top: 20rpx;right: 30rpx;text-align: center;font-size: 26rpx;color: #333333;line-height: 50rpx;}
+
+.areaList{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: white;
+  border-radius: 5rpx;
+}
+
+@import '../myCourse/myCourse.wxss'
+
+/* .content{padding: 0 30rpx 0 30rpx;}
+.lists{border-bottom:1rpx dashed #ebe6e4;height: 260rpx; padding-top: 25rpx;}
+.list_img{width: 220rpx; height: 220rpx; }
+.list_head_color{color: #c8b9a6;}
+.list_content{width: 448rpx;font-size: 24rpx;padding-left: 15rpx; position: relative;}
+.list_head{ font-size: 26rpx;color: #000000;height: 66rpx;overflow: hidden;}
+.list_time{font-size: 24rpx;height: 30rpx;}
+.list_details{color: #a19a8a;padding-top:20rpx; height:80rpx; overflow: hidden;}
+.list_collect{width: 26rpx;height: 26rpx;vertical-align: middle;margin-top: 10rpx;}
+.list_price{height: 45rpx;}
+.price{vertical-align: middle;}
+.serSortList{z-index: 9999;position: absolute;text-align: center;width: 100%; background: #fff;}
+.display_inb{display: inline-block;}
+.list_bottom{font-size: 24rpx;color: #666;position: relative;bottom: 0;}
+.list_eye{width: 36rpx;height: 24rpx;}
+.list_day{display: inline-block;float: right;}
+.fl{float: left;}
+.fr{float: right;} */
+

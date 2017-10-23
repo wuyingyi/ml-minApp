@@ -1,0 +1,30 @@
+<!--pages/myCourse/myCourse.wxml-->
+<template name="myCourse">
+  <view class='content' wx:for='{{Data}}' wx:key='*Data'>
+
+    <navigator url='../courseDetail/courseDetail?id={{item.CourseID}}'>
+      <view class='lists display_inb'>
+        <image class='list_img fl' src='{{item.CoursePic}}'></image>
+        <view class='list_content fr'>
+          <view class=' list_head'>
+            <text class='list_head_color'>| {{item.CourseTypeName}} | </text>
+            <text>  {{item.CourseTitle}}</text>
+          </view>
+          <view class='list_time list_head_color'>{{item.CourseTime}}</view>
+          <view class='list_details display_inb'>{{item.CourseAddress}}</view>
+          <view class='list_bottom'>
+            <image src='/image/eye.png' class='list_eye'></image>
+            <text>{{item.CourseHits}}</text>
+            <view class='display_inb list_cv' catchtap="collectCut" data-index="{{index}}" data-id="{{item.CourseID}}">
+              <image src="{{item.IsFav ? '/image/collecting.png':'/image/collect.png'}}" class='list_collect'></image>
+            </view>
+            <view class='list_day'>￥{{item.Price}}起</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+  </view>
+</template>
+
+<template is="myCourse" data="{{Data}}" />

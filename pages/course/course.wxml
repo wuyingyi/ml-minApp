@@ -1,0 +1,72 @@
+<import src="../../module/banner/banner.wxml" />
+<import src="../../module/filtrate/filtrate.wxml" />
+<import src="../myCourse/myCourse.wxml" />
+
+<view class="top">
+  <template is="Banner" data="{{imgUrls}}"></template>
+</view>
+<view>
+  <!-- <view class='search_top'>
+    <navigator url="" class="searchs">
+      <icon type="search" size="14" class="serIcon"></icon>
+      <text>搜索采购</text>
+    </navigator>
+  </view> -->
+
+  <view class='search_top'>
+    <view class='areaList'>
+      <block wx:for="{{list1}}" wx:key='*list1'>
+        <view class='sort_c' bindtap='placeUnfold1' data-index="{{index}}">
+          {{item.placeSortSelect}}
+          <image src='../../image/arowD.png' class='sort_img' style='transform: rotate({{item.placePurSortOpen ? "0" : "180"}}deg)'></image>
+          <view class="serSortList" hidden="{{ item.placePurSortOpen }}">
+            <radio-group bindchange="placeSortChangeFn1" data-index="{{index}}">
+              <block wx:for="{{item.placeSortData}}" wx:key="id" wx:for-item="item">
+                <label data-item="{{item}}" bindtap="supSortChangeItemFn1">
+                  <view class='serSort_border '>
+                    <radio value="{{item.ClassName}}" checked="{{item.checked}}" hidden="true" />{{item.ClassName}}
+                    <block>
+                      <icon hidden="{{!item.checked}}" class="serSortListItR_ok" color='#ebe6e4' type="success_no_circle" size="14" />
+                    </block>
+                  </view>
+
+                </label>
+              </block>
+            </radio-group>
+          </view>
+        </view>
+      </block>
+    </view>
+    <input class='searchs' placeholder='课程搜索' bindinput='searchList'></input>
+  </view>
+
+  <view class='sort'>
+    <template is="Filtrate" data="{{list}}" />
+  </view>
+
+  <template is="myCourse" data="{{Data}}" />
+
+  <!-- <view class='content' wx:for='{{Data}}' wx:key='*Data'>
+
+    <navigator url='../courseDetail/courseDetail?id={{item.CourseID}}'>
+      <view class='lists display_inb'>
+        <image class='list_img fl' src='{{item.CoursePic}}'></image>
+        <view class='list_content fr'>
+          <view class=' list_head'>
+            <text class='list_head_color'>| {{item.CourseTypeName}} | </text>
+            <text>  {{item.CourseTitle}}</text>
+          </view>
+          <view class='list_time list_head_color'>{{item.CourseTime}}</view>
+          <view class='list_details display_inb'>{{item.CourseAddress}}</view>
+          <view class='list_bottom'>
+            <image src='/image/eye.png' class='list_eye'></image>
+            <text>{{item.CourseHits}}</text>
+            <view class='list_day'>￥{{item.Price}}起</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+  </view> -->
+
+</view>

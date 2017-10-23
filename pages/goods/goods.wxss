@@ -1,0 +1,20 @@
+.top{width: 100%;height: 320rpx;}
+.search_top{height: 90rpx;background: #ebe6e4;position: relative;}
+.searchs{height: 50rpx;width: 690rpx;background: #fff;border-radius: 5rpx;position: absolute;top: 20rpx;left: 30rpx;text-align: center;font-size: 26rpx;color: #333333;line-height: 50rpx;}
+/* .content{padding: 0 30rpx 0 30rpx;}
+.lists{border-bottom:1rpx dashed #ebe6e4;height: 260rpx; padding-top: 25rpx;}
+.list_img{width: 220rpx; height: 220rpx; }
+.list_content{width: 448rpx;font-size: 24rpx;padding-left: 15rpx;}
+.list_head{ font-size: 26rpx;color: #000000;height: 66rpx;overflow: hidden;}
+.list_details{color: #a19a8a;padding-top:20rpx; height: 112rpx; overflow: hidden;}
+.list_collect{width: 26rpx;height: 26rpx;vertical-align: middle;margin-top: 10rpx;}
+.list_price{height: 45rpx;}
+.list_cv{width: 50rpx;height: 40rpx;}
+.price{vertical-align: middle;}
+.serSortList{z-index: 9999;position: absolute;text-align: center;width: 100%; background: #fff;}
+.display_inb{display: inline-block;}
+.fl{float: left;}
+.fr{float: right;} */
+
+@import '../myGoods/myGoods.wxss';
+

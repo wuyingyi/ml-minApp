@@ -1,0 +1,23 @@
+<template name="Filtrate">
+  <block wx:for="{{list}}" wx:key='*list'>
+    <view class='sort_c' bindtap='placeUnfold' data-index="{{index}}">
+      {{item.placeSortSelect}}
+      <image src='../../image/arowD.png' class='sort_img' style='transform: rotate({{item.placePurSortOpen ? "0" : "180"}}deg)'></image>
+      <view class="serSortList" hidden="{{ item.placePurSortOpen }}">
+        <radio-group bindchange="placeSortChangeFn" data-index="{{index}}">
+          <block wx:for="{{item.placeSortData}}" wx:key="id" wx:for-item="item">
+            <label data-item="{{item}}"  bindtap="supSortChangeItemFn">
+              <view class='serSort_border '>
+                <radio value="{{item.ClassName}}" checked="{{item.checked}}" hidden="true" />{{item.ClassName}}
+                <block>
+                  <icon hidden="{{!item.checked}}" class="serSortListItR_ok" color='#ebe6e4' type="success_no_circle" size="14" />
+                </block>
+              </view>
+
+            </label>
+          </block>
+        </radio-group>
+      </view>
+    </view>
+  </block>
+</template>

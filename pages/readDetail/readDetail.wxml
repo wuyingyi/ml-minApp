@@ -1,0 +1,17 @@
+<view class="top">
+  <image class="top_img" src="{{info.NewsPic}}"></image>
+  <view class='top_title'>{{info.NewsTitle}}</view>
+  <view class='top_time'>{{info.strPostDate}}</view>
+  <view class='top_msg'>{{info.NewsHits}}</view>
+  <image src='../../image/eye.png' class='top_eye'></image>
+</view>
+<view class='head'>
+  <view class='head_name fl'>{{info.authName}}</view>
+  <text class='line fl'>|</text>
+  <view class='head_money fl'>{{info.authDesc}}</view>
+</view>
+<view class='content'>
+  <!-- <textarea class='texts' disabled="false" value="{{info.NewsDesc}}" auto-height="true" maxlength="-1"></textarea> -->
+  <rich-text class='texts' type='text' nodes="{{info.NewsDesc}}"></rich-text>
+</view>
+<view class='bottom'></view>

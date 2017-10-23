@@ -1,0 +1,26 @@
+<!--pages/myFav/myFav.wxml-->
+<import src="../myRead/myRead.wxml" />
+<import src="../myCourse/myCourse.wxml" />
+<import src="../myGoods/myGoods.wxml" />
+
+<view class='tabbar'>
+  <view class='tlist {{tIndex == 0 && "active"}}' bindtap='switchTab' data-index='0'>
+    <text class='text'>文章</text>
+  </view>
+  <view class='tlist {{tIndex == 1 && "active"}}' bindtap='switchTab' data-index='1'>
+    <text class='text'>课程</text>
+  </view>
+  <view class='tlist {{tIndex == 2 && "active"}}' bindtap='switchTab' data-index='2'>
+    <text class='text'>物品</text>
+  </view>
+</view>
+
+<view class='read' hidden='{{tIndex != 0}}'>
+  <template is="myRead" data="{{readList}}" />
+</view>
+<view class='course' hidden='{{tIndex != 1}}'>
+  <template is="myCourse" data="{{Data}}" />
+</view>
+<view class='goods' hidden='{{tIndex != 2}}'>
+  <template is="myGoods" data="{{goodList}}" />
+</view>

@@ -1,0 +1,61 @@
+<!--pages/detail/detail.wxml-->
+<view class='banner'>
+  <image src='{{info.CoursePic}}'></image>
+  <view class='type'>| {{info.CourseTypeName}} |</view>
+  <view class='title'>{{info.CourseTitle}}</view>
+  <!-- <view class='desc'>{{info.CourseDesc}}</view> -->
+  <rich-text class='desc' type='text' nodes="{{info.CourseDesc}}"></rich-text>
+  <view class='sale'>预售中</view>
+</view>
+
+<view class='price-num flex'>
+  <view class='price-wrapper'>
+    <text>￥</text>
+    <text class='price'>{{info.Price}}</text>
+    <text> 起</text>
+  </view>
+  <text>已有{{info.AppalyCount}}人报名</text>
+</view>
+
+<view class='time-place'>
+  <view class='time'>
+    <view>
+      <image class='icon' src='/image/time.png'></image>
+      <text class='text'>{{info.CourseTime}}</text>
+    </view>
+  </view>
+  <view class='place'>
+    <view>
+      <image class='icon' src='/image/place.png'></image>
+      <text class='text'>{{info.CourseAddress}}</text>
+    </view>
+    <image class='icon_arow' src='/image/arowR.png'></image>
+  </view>
+</view>
+
+<view class='list-wrapper'>
+  <!-- <view class='list' wx:for='{{list}}' wx:key='*this'>
+    <view class='title'>{{item.title}}</view>
+    <text class='desc'>{{item.desc}}</text>
+  </view> -->
+
+  <view class='list'>
+    <view class='title'>课程介绍</view>
+    <rich-text class='desc' type='text' nodes="{{info.CourseDesc}}"></rich-text>
+  </view>
+  <view class='list'>
+    <view class='title'>老师介绍</view>
+    <!-- <text class='desc'>{{info.TeacherDesc}}</text> -->
+    <rich-text class='desc' type='text' nodes="{{info.TeacherDesc}}"></rich-text>
+  </view>
+  <view class='list'>
+    <view class='title'>主办方介绍</view>
+    <rich-text class='desc' type='text' nodes="{{info.SponsorDesc}}"></rich-text>
+  </view>
+  <view class='list'>
+    <view class='title'>翻译介绍</view>
+    <rich-text class='desc' type='text' nodes="{{info.TranslaterDesc}}"></rich-text>
+  </view>
+
+  <button class='button' open-type='contact'>我要咨询</button>
+</view>

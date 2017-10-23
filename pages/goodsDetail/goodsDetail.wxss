@@ -1,0 +1,16 @@
+ .top{height: 320rpx;width: 100%; position: relative;} 
+.top_img{height: 320rpx;width: 100%;}
+.top_msg{width: 90rpx;height: 35rpx;line-height: 30rpx; border: solid 1rpx #fff; border-radius:8rpx;font-size: 20rpx;color: #fff;position: absolute;bottom: 30rpx;right: 30rpx;text-align: center;}
+.head{height: 90rpx;line-height: 90rpx; width: 100%;border-bottom: solid 1rpx #ccc;padding:0 27rpx;}
+.head_name{font-size: 24rpx;color: #333;font-weight:bold;}
+.head_money{font-size: 20rpx;color: #333;}
+.head_money text{font-size: 32rpx;color: #a79970;}
+.content{padding: 0 25rpx;}
+.inspiration{border-bottom: dashed 1rpx #ccc;}
+.title{font-size: 24rpx;color: #333;font-weight: bold;padding: 20rpx 0;}
+.detail{font-size: 24rpx;color: #7c7c7c;line-height: 40rpx;padding-bottom: 20rpx;}
+.content_img{width: 700rpx;}
+.img_list{padding-bottom: 20rpx;}
+button{margin-bottom: 60rpx;background: #c88e44;color: #fff;}
+.fl{float: left;}
+.fr{float: right;}
